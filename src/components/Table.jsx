@@ -3,6 +3,7 @@ import axios from "axios";
 import TableElements from "./TableElements";
 import ExportButton from "./ExportButton";
 import Flat from "./Flat";
+import GridView from "./GridView";
 
 export default function Table({
   isLoading,
@@ -39,7 +40,8 @@ export default function Table({
   return (
     <div>
       {!isLoading && isPresenting && (
-        <ExportButton userInfo={userInfo}></ExportButton>
+        <GridView userInfo={userInfo}></GridView>
+        // <ExportButton userInfo={userInfo}></ExportButton>
       )}
       {/* <TableElements userInfo={userInfo} isLoading={isLoading} /> */}
       {/* {!isLoading && <Flat userInfo={userInfo} isLoading={isLoading}></Flat>} */}

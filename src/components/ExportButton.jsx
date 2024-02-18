@@ -41,9 +41,9 @@ export default function ExportButton({ userInfo }) {
       column.width = 25;
     });
     sheet.eachRow((row) => {
-      row.height = 24;
+      row.height = 100;
       row.eachCell((cell) => {
-        cell.alignment = { horizontal: "center" };
+        cell.alignment = { horizontal: "right" };
         cell.font = {
           size: 12,
           color: { argb: "515151" },
